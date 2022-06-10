@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
     s.subspec 'CSJ' do |csj|
         csj.dependency 'EasyAdsSDK/Core'
         csj.dependency 'EasyAdsSDK/Adspot'
-        csj.dependency 'Ads-CN'
+        csj.dependency 'Ads-CN', '~> 4.0.0.5'
         csj.source_files = 'EasyAdsSDK/Adapter/CSJ/**/*.{h,m}'
         csj.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
         csj.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
     s.subspec 'GDT' do |gdt|
         gdt.dependency 'EasyAdsSDK/Core'
         gdt.dependency 'EasyAdsSDK/Adspot'
-        gdt.dependency 'GDTMobSDK'
+        gdt.dependency 'GDTMobSDK', '~> 4.13.22'
         gdt.source_files =  'EasyAdsSDK/Adapter/GDT/**/*.{h,m}'
         gdt.frameworks = 'AdSupport', 'CoreLocation', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'Security', 'StoreKit', 'AVFoundation', 'WebKit'
         gdt.libraries     = 'xml2', 'z'
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
     s.subspec 'KS' do |ks|
         ks.dependency 'EasyAdsSDK/Core'
         ks.dependency 'EasyAdsSDK/Adspot'
-        ks.dependency 'KSAdSDK'
+        ks.dependency 'KSAdSDK', '~> 3.3.16'
         ks.source_files = 'EasyAdsSDK/Adapter/Kuaishou/**/*.{h,m}'
         ks.frameworks = ["Foundation", "UIKit", "MobileCoreServices", "CoreGraphics", "Security", "SystemConfiguration", "CoreTelephony", "AdSupport", "CoreData", "StoreKit", "AVFoundation", "MediaPlayer", "CoreMedia", "WebKit", "Accelerate", "CoreLocation", "AVKit", "MessageUI", "QuickLook", "AudioToolBox", "AddressBook"]
         ks.libraries =  ["z", "resolv.9", "sqlite3", "c++", "c++abi"]
@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
     s.subspec 'BD' do |bd|
         bd.dependency 'EasyAdsSDK/Core'
         bd.dependency 'EasyAdsSDK/Adspot'
-        bd.dependency 'BaiduMobAdSDK'
+        bd.dependency 'BaiduMobAdSDK', '~> 4.83'
         bd.source_files =  'EasyAdsSDK/Adapter/BD/**/*.{h,m}'
         bd.frameworks = 'CoreLocation', 'SystemConfiguration', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'AdSupport', 'SystemConfiguration', 'QuartzCore', 'WebKit', 'MessageUI','SafariServices','AVFoundation','EventKit','QuartzCore','CoreMedia','StoreKit'
         bd.libraries     = 'c++'
